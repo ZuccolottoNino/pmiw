@@ -1,4 +1,5 @@
-//https://youtu.be/TqFdMAgFVXk
+//Video Zuccolotto Nino: https://youtu.be/TqFdMAgFVXk
+//Video Novoa Simon: https://youtu.be/8Qgx5tdJKn0
 let pasar = 0, mov = 0
   let pasar2=0, negro=0
   let pantalla=[], texto=[], musica
@@ -59,3 +60,4 @@ function mousePressed() {
   }
   pantallac()
 }
+
