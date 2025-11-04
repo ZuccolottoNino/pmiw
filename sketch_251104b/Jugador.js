@@ -1,24 +1,22 @@
-class Jugador{
-construct(){
-  this.posX;
-  this.posY;
-  this.movimiento;
-  this.colisionJugador;
-  this.vida = 10;
-  this.velocidad;
-  this.jugador = new Jugador();
-}
+class Jugador {
+  construct() {
+    this.posX = width/2
+      this.posY = 300
+      this.movimiento
+      this.colisionJugador
+      this.vida = 10
+      this.velocidad = 10
+      this.jugador = new Jugador();
+  }
+  dibujar() {
+    this.Jugador.dibujar();
+    rect(this.posX, this.posY, 30, 50);
+  }
 
-dibujar(){
-  this.jugador.dibujar();
-  
-}
+  moverJugador() {
+  }
 
-moverJugador(){
-}
-
-quitarVida(){
-  this.vida = this.vida - 1;
-}
-
+  quitarVida() {
+    this.vida = this.vida - 1;
+  }
 }

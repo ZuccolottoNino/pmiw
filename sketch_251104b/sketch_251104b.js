@@ -1,6 +1,7 @@
 let juego = new Juego();
 
-setup() {
+function setup() {
+  
 createCanvas(640,480);
 }
 
