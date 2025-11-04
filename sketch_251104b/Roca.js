@@ -1,10 +1,14 @@
 class Roca{
-construct(){
+constructor(){
   this.posX;
   this.posY;
   this.movimientoRocas;
-  this.tiempoEntreRocas;
+  this.tiempoEntreRocas = 2
   this.colisionRocas;
-  this.velocidad;
+  this.velocidad = 5
+}
+
+dibujar(){
+  
 }
 }

@@ -1,6 +1,7 @@
-let juego = new Juego();
+let juego;
 
 function setup() {
+  juego = new Juego();
   juego.iniciar();
   createCanvas(640, 480);
 }
