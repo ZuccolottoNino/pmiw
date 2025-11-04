@@ -10,7 +10,7 @@ construct(){
   this.colisionJugador;
   this.movimiento;
   this.movimientoRocas;
-  this.restarVida:
+  this.restarVida;
   this.sumarVida;
   this.colisionRocas;
 }
