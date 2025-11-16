@@ -1,0 +1,34 @@
+ 
+Hansel y Gretel, dos hermanos pequeños, despiertan abandonados en un bosque oscuro por la pobreza de sus padres. El sol apenas ilumina entre los árboles, y el hambre los debilita. El bosque está lleno de sonidos inquietantes.
+Explorando, encuentran un sendero cubierto de hojas secas. Hansel recoge piedras blancas para marcar el camino, mientras Gretel evita unas bayas sospechosas. El sendero se pierde en la espesura.
+El sendero los lleva a un riachuelo de agua clara. El hambre crece, pero el agua los refresca. Gretel huele algo dulce, como pan horneado, flotando desde el norte.
+El olor los guía a un claro donde aparece una casa asombrosa: paredes de chocolate, techo de galleta y ventanas de caramelo. El hambre es casi insoportable, y la casa parece un milagro.
+Una bruja anciana con ojos brillantes sale de la casa, invitándolos a entrar con promesas de comida y refugio. Su sonrisa es extraña, y los hermanos dudan, temiendo un peligro oculto.
+Dentro de la casa, la bruja les ofrece dulces y sopa caliente. Parece amable, pero Hansel nota una jaula en la esquina. Ella cuenta historias del bosque mientras aviva el fuego del horno.
+Tras la comida, la bruja revela su plan: engordar a Hansel para comérselo. Lo encierra en la jaula y ordena a Gretel cocinar. Los hermanos susurran un plan mientras la bruja se distrae.
+La bruja se acerca al horno para verificar el fuego, dejando un momento crítico. Gretel debe decidir cómo salvar a su hermano antes de que la bruja cumpla su amenaza.
+Con un empujón valiente, los hermanos queman a la bruja en el horno. Encuentran un cofre de oro en la casa y regresan a casa, reunidos con sus padres arrepentidos.
+Rodeando la casa, ven a la bruja mezclando pociones por la ventana. En el jardín trasero, hay hierbas brillantes y un pozo profundo. Deben moverse con sigilo para no ser descubiertos.
+En el jardín, Gretel encuentra una varita mágica entre las hierbas. Hansel ve que la bruja sale a recolectar ingredientes, dejando la puerta abierta. Es un momento ideal para planear.
+La varita brilla, y un hechizo hace crecer enredaderas que rodean la casa. La bruja, alertada, sale furiosa con su bastón. Los hermanos deben decidir cómo evitarla sin enfrentarla directamente.
+Huyendo al bosque, los hermanos tropiezan en un terreno pantanoso. La bruja los persigue, iluminando el camino con su bastón mágico. El cansancio los alcanza, y el pantano dificulta el escape.
+En el pantano, un ciervo aparece y los guía a un escondite entre árboles. La bruja está cerca, y su bastón emite destellos. Los hermanos deben confiar en el animal para avanzar.
+El ciervo los lleva a una cueva, pero la bruja los alcanza y lanza un hechizo que los hace tropezar. Están acorralados cerca de un riachuelo, con la bruja acercándose.
+Cruzando el riachuelo, resbalan en las rocas mojadas. La bruja está al borde del agua, riendo mientras extiende su mano. Los hermanos deben decidir si resistir o negociar.
+Agotados, no logran cruzar el riachuelo. La bruja captura a Hansel y lo lleva de vuelta a la casa, donde lo prepara para su festín. Gretel queda sola abandonada en el riachuelo.
+Aceptando la tregua, la bruja los lleva a la casa y les ofrece un trato: aprender magia a cambio de lealtad. Hansel, aún en la jaula, duda, pero Gretel ve una oportunidad.
+Escondidos, ven cómo las enredaderas atrapan a la bruja temporalmente. Ella murmura un hechizo para liberarse, pero los hermanos notan un libro mágico en el jardín.
+La bruja les enseña hechizos básicos, y los hermanos descubren que no es tan cruel como parece. Les ofrece quedarse como aprendices, viviendo en el bosque con poderes mágicos.
+Al unirse a la bruja, los hermanos aprenden magia y se convierten en guardianes del bosque. Viven en la casa de dulces, usando hechizos para atraer viajeros malvados y proteger el bosque, con un toque de magia oscura.
+
+Confiar en la bruja y entrar. >
+Rodear la casa para espiar. >
+Empujar a la bruja al horno. >
+Ofrecerse como ayudante. >
+Dejar que las enredaderas la atrapen. >
+Escapar hacia el bosque. >
+Nadar al otro lado para escapar. >
+Aceptar su mano y pedir una tregua. >
+
+Aventura gráfica hecha por: Simon Novoa & Zuccolotto Nino
+Obra original de: Hermanos Grimm, Jacob y  Wilhelm
