@@ -1,12 +1,20 @@
 class Rio {
   constructor(Jugador) {
-    this.Roca = []; 
+    this.Roca = [];
     this.Jugador = Jugador;
-    this.cantRocasMax = 7; 
+    this.cantRocasMax = 7;
     this.tasaAparicionRocas = 40;
-    this.posPermitidas = [80, 160, 240, 320, 400, 480, 560]; 
+    this.randomIndex = 0;
+    this.spawnX = 0;
+    this.spawnY_nuevo = 0;
+    this.minY = 0;
+    this.roca = null;
+    this.radioJugador = 20;
+    this.jugX = 0;
+    this.jugY = 0;
+    this.distancia = 0;
   }
-  
+
   dibujar() {
     this.spawnRocas();
     this.dibujarRocas();
@@ -15,48 +23,55 @@ class Rio {
 
   spawnRocas() {
     if (frameCount % this.tasaAparicionRocas === 0 && this.Roca.length < this.cantRocasMax) {
-        
-        //Elegir una posición X aleatoria de la lista
-        let randomIndex = floor(random(this.posPermitidas.length));
-        let spawnX = this.posPermitidas[randomIndex]; 
-        
-        //Definir la posición Y de aparición (separación vertical)
-        let spawnY = -80; 
-        
-        if (this.Roca.length > 0) {
-            // Encuentra la más alta en posición Y entre todas las rocas
-            let rocaAltaY = this.Roca.reduce((minY, roca) => min(minY, roca.posY), 0); //busca la roca con la posición Y mas chica en la pantalla.
-            
-            // La nueva roca aparece 80 mas arriba
-            spawnY = rocaAltaY - 80; 
-        }
 
-        this.Roca.push(new Roca(spawnX, spawnY)); 
+      // Elige una columna (1 a 7) de forma aleatoria.
+      // Las posiciones son 80, 160, ..., 560. Esto es: columna * 80.
+      this.columnaAleatoria = floor(random(1, 8)); // random(1, 8) da 1, 2, 3, 4, 5, 6, 7
+      this.spawnX = this.columnaAleatoria * 80;
+
+      this.spawnY_nuevo = -80;
+
+      if (this.Roca.length > 0) {
+
+        this.minY_cap = 0;
+
+        for (let i = 0; i < this.Roca.length; i++) {
+          if (this.Roca[i].posY < this.minY_cap) {
+            this.minY_cap = this.Roca[i].posY;
+          }
+        }
+        this.spawnY_nuevo = this.minY_cap - 80;
+      }
+      this.Roca[this.Roca.length] = new Roca(this.spawnX, this.spawnY_nuevo);
     }
   }
 
   dibujarRocas() {
     for (let i = this.Roca.length - 1; i >= 0; i--) {
-      let roca = this.Roca[i]; 
-      roca.mover();
-      roca.dibujar();
+      this.roca = this.Roca[i];
+      this.roca.mover();
+      this.roca.dibujar();
 
-      if (roca.fueraDePantalla(height)) {
-        this.Roca.splice(i, 1);  //splice elimina un elemento de un arreglo
+      if (this.roca.fueraDePantalla(height)) {
+        this.Roca.splice(i, 1);
       }
     }
   }
 
   chequearColision() {
-    let radioJugador = 20;
-    
+    this.radioJugador = 20;
+
     for (let i = this.Roca.length - 1; i >= 0; i--) {
-      let roca = this.Roca[i];
-      let distancia = dist(this.Jugador.colisionJugador.x, this.Jugador.colisionJugador.y, roca.posX, roca.posY);
-      
-      if (distancia < radioJugador + roca.tam / 2) { 
+      this.roca = this.Roca[i];
+
+      this.jugX = this.Jugador.colisionJugador_x;
+      this.jugY = this.Jugador.colisionJugador_y;
+
+      this.distancia = dist(this.jugX, this.jugY, this.roca.posX, this.roca.posY);
+
+      if (this.distancia < this.radioJugador + this.roca.tam / 2) {
         this.Jugador.quitarVida();
-        this.Roca.splice(i, 1); //splice elimina un elemento de un arreglo
+        this.Roca.splice(i, 1);
       }
     }
   }
