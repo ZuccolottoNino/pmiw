@@ -1,4 +1,4 @@
-class App {
+class Juego {
   constructor() {
     this.Jugador = new Jugador();
     this.Rio = new Rio(this.Jugador);
@@ -160,7 +160,7 @@ class App {
     } else if (this.estadoJuego === 'GAMEOVER' || this.estadoJuego === 'GANADO') {
       this.seleccion = this.botonReiniciar.fueClickeado(mx, my);
       if (this.seleccion === 'REINICIAR_JUEGO') {
-        this.reiniciarApp();
+        this.reiniciarJuego();
       }
     }
   }
@@ -172,7 +172,7 @@ class App {
     }
   }
   
-  reiniciarApp() {
+  reiniciarJuego() {
     this.Jugador = new Jugador();
     this.Rio = new Rio(this.Jugador);
     this.bruja = new Bruja();

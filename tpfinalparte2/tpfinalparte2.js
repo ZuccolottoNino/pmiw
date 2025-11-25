@@ -1,5 +1,5 @@
 //www.youtube.com/watch?v=rmS7SFmleBA
-let app; 
+let juego; 
 let imgBorde, imgRoca, imgBruja, fondoH, fondoM, imgGanaste, imgPerdiste;
 let musica, golpe, victoria, derrota;
 let animacionH = [];
@@ -37,18 +37,18 @@ function preload() {
 
 function setup() {
   createCanvas(640, 480);
-  app = new App(); 
-  app.iniciar(); 
+  juego = new Juego(); 
+  juego.iniciar(); 
 }
 
 function draw() {
-    app.dibujar();
+    juego.dibujar();
 }
 
 function mousePressed() {
-    app.manejarClick(mouseX, mouseY);
+    juego.manejarClick(mouseX, mouseY);
 }
 
 function keyPressed() {
-    app.manejarTecla(key);
+    juego.manejarTecla(key);
 }
